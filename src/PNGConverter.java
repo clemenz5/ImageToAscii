@@ -54,7 +54,7 @@ class PNGConverter implements  Converter{
 
     private boolean imageIsBW(){
         try {
-            System.out.println(image.getColorModel().getBlue(0));
+            image.getColorModel().getBlue(0);
         }catch (Exception e){
             return false;
         }
